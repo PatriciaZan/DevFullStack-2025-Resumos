@@ -1,5 +1,5 @@
-// Funçoes
-
+// Functions are statemes that perform taks or calculates a value
+// Using the class exemples:
 function retornaParOuImpar(valor){
     let resultado
 
