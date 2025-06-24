@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --ff: "Roboto", sans-serif; 
+    --clr-background: rgb(178, 181, 196);
+}
+
+body{
+    font-family: var(--ff);
+    background-color: var(--clr-background);
+}
+
+th{
+    background-color: rgb(57, 95, 177);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+table{
+    border: 1px solid red;
+    border-radius: 20px;
+    padding: 20px;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 10 de Junho - Formulários</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="form-container">
+        <h2>Registrar Conta</h2>
+        <form>
+            <div class="input-group">
+                <label>Nome Completo:</label>
+                <input class="inputWidth" type="text">
+            </div>
+            
+            <div class="input-group">
+                <label>E-mail:</label>
+                <input class="inputWidth" type="email" placeholder="@gmail.com">
+            </div>
+            
+            <div class="input-group">
+                <label>Senha:</label>
+                <input class="inputWidth" type="password" placeholder="Digite sua senha">
+            </div>
+
+            <div class="input-group">
+                <label>Gênero:</label>
+                <div class="radio-group">
+                    <label for="male">
+                        <input type="radio" value="male" name="gender">Masculino
+                    </label>
+                    <label for="female">
+                        <input type="radio" value="female" name="gender">Feminino
+                    </label>
+                    <label for="other">
+                        <input type="radio" value="other" name="gender">Outro
+                    </label>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label>Preferências:</label>
+                <div class="checkbox-group">
+                    <label for="newsletter">
+                        <input type="checkbox" name="newsletter">Gostaria de assinar a newsletter
+                    </label>
+                    <label for="updates">
+                        <input type="checkbox" name="updates">Gostaria de receber atualizações
+                    </label>
+                </div>
+            </div>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>  
+</body>
+</html>

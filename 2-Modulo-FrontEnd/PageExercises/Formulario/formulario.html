@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 10 de Junho - Formulários</title>
+
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!--link style-->
+    <link rel="stylesheet" href="./formStyle.css">
+
+</head>
+<body>
+    <div class="mainContainer">
+
+    <section class="sectionHero">
+        <div>
+            <h1>Authentic</h1>
+            <h2>Next course will be open in Summer 2025.</h2>
+        </div>
+
+        <div>
+            <p>Applications will be reviewed before the next admission test in 21 of October 2025.</p>
+            <p>Check your mailbox after your register for more information on the test and documentation.</p>
+        </div>
+
+        <div>
+            <p><span>Good Luck!</span></p>
+            <p>__ Authentic team.</p>
+        </div>
+
+        <div>
+            <p><a href="../home.html">Learn more about the Courses</a></p>
+        </div>
+    </section>
+
+    <section class="formContainer">
+        <div>
+            <form>
+                <div class="titleForm">
+                    <div class="colorBox"></div>
+                    <h1>Join the Academy</h1>
+                </div>
+
+                <div class="formName">
+                    <div>
+                        <label for="name">First Name</label>
+                        <label for="lastName">Last Name</label>
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Hello...">
+                        <input type="text" placeholder="You are?">
+                    </div>
+                </div>
+
+                <label for="email">Email</label>
+                <input type="email" placeholder="your@email.com">
+
+                <label for="password">PassWord</label>
+                <input type="password" placeholder="Coolest password possible here">
+
+                
+                <label for="course" class="labelDesiredCourse">Desired Course</label>
+                <div class="desiredCourse">
+                    <div class="frontEnd course">
+                        <p>FrontEnd</p>
+                        <input type="radio" id="frontend" name="course" value="frontend">
+                    </div>
+
+                    <div class="design course">
+                        <p>Design</p>
+                        <input type="radio" id="design" name="course" value="design">
+                    </div>
+
+                    <div class="backEnd course">
+                        <p>Backend</p>
+                        <input type="radio" id="backend" name="course" value="backend">
+                    </div>
+                </div>
+
+                <button>Submit</button>
+            </form>
+        </div>
+    </section>
+
+    </div>
+</body>
+</html>
