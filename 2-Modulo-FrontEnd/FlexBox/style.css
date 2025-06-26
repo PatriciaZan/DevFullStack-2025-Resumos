@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --ff-main: "Roboto", sans-serif;
+    --ff-logo: "Jaro", sans-serif;
+
+    --ff-clr-logo: rgb(26, 26, 26);
+    --ff-clr-primary: white;
+    --ff-clr-secondary: #5a799c;
+
+    --clr-grad_1: #5a799c;
+    --clr-grad_2: #EEAECA;
+}
+
+body{
+    font-family: var(--ff-main);
+    background: #EEAECA;
+    background: radial-gradient(circle, rgba(238, 174, 202, 0.52) 0%, rgba(148, 187, 233, 0.58) 100%);
+    user-select: none
+}
+
+/*HEADER -----------------------------------*/
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid var(--clr-grad_1);
+}
+
+header h1{
+    font-family: var(--ff-logo);
+    color: var(--ff-clr-logo);
+}
+
+header ul{
+    display: flex;
+    gap: 40px;  
+}
+
+header ul li{
+    padding: 20px;
+    list-style: none;
+}
+
+header ul li a{   
+    text-decoration: none;
+    color: var(--ff-clr-secondary);
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+/* Hover on li a */
+header a:hover{
+    border-bottom: 1px solid var(--clr-grad_1);
+}
+
+/*CONTAINERS | BOXES ------------------------*/
+.containers{
+    margin-top: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.containers .box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 200px;
+    height: 200px;
+    /* border: 1px solid blue; */
+    color: var(--ff-clr-primary);
+    border-radius: 10px;
+
+    transition: all .5s;
+}
+
+
+.containers .container-1{
+    background-color: var(--clr-grad_1);
+}
+.containers .container-2{
+    background-color: var(--clr-grad_1);
+}
+.containers .container-3{
+    background-color: var(--clr-grad_1);
+}
+
+/* Hover effecs */
+.container-1:hover{
+    box-shadow: -30px -16px var(--clr-grad_2);
+    transform: rotate(-10deg);
+}
+
+.container-2:hover{
+    box-shadow: 5px -16px var(--clr-grad_2);
+    margin-top: -30px;
+}
+
+.container-3:hover{
+    box-shadow: 30px -16px var(--clr-grad_2);
+    transform: rotate(10deg);
+}
+
+/*ASIDE -------------------------------------*/
+
+aside{
+    /* border: 1px solid green; */
+    width: 60px;
+    margin-top: -100px;
+    margin-left: 10px;
+}
+
+aside li{
+    list-style: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+img{
+    width: 40px;
+}
