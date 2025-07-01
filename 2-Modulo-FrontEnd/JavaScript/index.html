@@ -6,20 +6,28 @@
     <title>Lista de Compras</title>
 
     <link rel="stylesheet" href="./styles.css">
-    <script src="app.js" defer></script>
+    <script src="./script.js" defer></script>
 </head>
 <body>
     <div class="container">
         <h1>Lista de Compras</h1>
+        <p id="numeroItens">0 Itens na Lista</p>
 
         <form id="form-adicionar">
             <input type="text" id="input-item" placeholder="Adicione um item...">
-            <button type="submit">Adicionar</button>
+            <button type="submit" class="adicionar">Adicionar</button>
         </form>
 
         <ul id="lista-itens"></ul>
 
         <button class="limpar" id="btn-limpar">Limpar Lista</button>
+        <button class="limparComprados" id="btn-limpar-comprados">Limpar Comprados</button>
+
+        <p>Filtrar itens</p>
+        <button id="btn-filtrar-comprados">Comprados</button>
+        <button id="btn-filtrar-pendentes">Pendentes</button>
+
+        <ul id="lista-itens-filtrados"></ul>
     </div>
 </body>
 </html>
