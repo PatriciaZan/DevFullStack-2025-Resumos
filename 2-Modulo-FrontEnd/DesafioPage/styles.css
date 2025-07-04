@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.5;
+    color: #dddddd;
+    /* background-color: rgb(32, 32, 32); */
+    background: #f7006b;
+    background: linear-gradient(0deg, rgba(247, 0, 107, 1) 0%, rgba(33, 33, 33, 1) 13%);
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Estilização do Header */
+.header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+}
+.nav {
+    display: flex;
+}
+
+.nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav li +li {
+    margin-left: 1rem;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #e2e2e2;
+    padding: 1rem;
+    display: block;
+}
+
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+}
+
+@media(max-width: 462px) {
+    .nav {
+        position: none;
+        left: 0;
+        right: 0;
+        background: #fff;
+        flex-direction: column;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s;
+    }
+
+    .nav.open {
+        max-height: 200px;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+}
+
+.hero {
+    /* background-color: #f3205f; */
+    background: #4b4b4b;
+    /* background: linear-gradient(82deg, rgba(247, 0, 107, 1) 0%, rgba(245, 177, 51, 1) 59%, rgba(0, 119, 255, 1) 100%); */
+    padding: 4rem 0;
+    text-align: center;
+}
+/* Add fonte e gradiente na H1 */
+.hero h1{
+    font-family: "Rubik Glitch", system-ui;
+    font-size: 4rem;
+
+    background-image: linear-gradient(45deg, #F7006B,#F5B133, #0077FF);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+.hero p{
+    font-size: 1.5rem;
+}
+
+.hero .btn {
+    margin-top: 1rem;
+    text-decoration: none;
+}
+
+/*  */
+.services {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.card {
+    padding: 1rem;
+    border: 1px solid #F7006B;
+    border-radius: 8px;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: transform .4s;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+img{
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+/* Forulario de contato aqui */
+.contact {
+    padding: 2rem 0;
+    max-width: 500px;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input{
+    background-color: #4b4b4b;
+}
+
+.form-group textarea{
+    background-color: #4b4b4b;
+}
+
+.form-group input, textarea {
+    width: 90%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Aqui o botão Send */
+.btn {
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    background: #F7006B;
+    color: #fff;
+    padding: 1rem;
+    text-decoration: none;
+    border-radius: 4px;
+
+    transition: transform .4s ease-in-out;
+}
+
+.btn:hover{
+    transform: scale(1.2);
+}
+
+.footer {
+    background-color: #a80b4f;
+    text-align: center;
+    padding: 1rem 0;
+}

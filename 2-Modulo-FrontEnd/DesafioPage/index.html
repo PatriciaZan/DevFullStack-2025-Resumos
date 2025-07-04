@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Interativo</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- O header possui uma navegação em lista para links de outras paginas -->
+    <header>
+        <div class="container">
+            <!-- <a href="#" class="logo">Marca</a> -->
+            <button id="navToggle" class="nav-toggle" aria-label="Abrir Menu">+</button>
+            <nav id="navMenu" class="nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Producs</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Uma secção com a heroCall, podendo contém uma imagem e um link que corresponde a um btn -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <h1>Cycling Gear Done Right</h1>
+            <p>Explore the best Winning Race Jerseys</p>
+            <a href="" class="btn">Buy Here</a>
+        </div>
+    </section>
+
+    <!-- Uma section de cards com conteudos sobre oque o site oferece -->
+    <section id="services" class="services container">
+        <h2>Our Producs</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Fem PRO Jerseys</h3>
+                <p>Light Beathable Durable</p>
+                <img src="./imgs/1.jpg" alt="">
+                <p>See more &rarr;</p>
+            </div>
+            <div class="card">
+                <h3>Men Racing</h3>
+                <p>Durable Light</p>
+                <img src="./imgs/2.jpg" alt="">
+                <p>See more &rarr;</p>
+            </div>
+            <div class="card">
+                <h3>Sport Wear</h3>
+                <p>For all Sports</p>
+                <img src="./imgs/4.jpg" alt="">
+                <p>See more &rarr;</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Uma section que funciona com uma form de cadastro, pdoe ser um contto ou news letter -->
+    <section id="contact" class="contact container">
+        <h2>Our Newsletter</h2>
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">About you</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <span class="error-msg"></span>
+            </div>
+
+            <button type="submit" class="btn">Send</button>
+        </form>
+    </section>  
+
+    <!-- famoso footer com informações de copyright/ info do site e empresa -->
+    <footer class="footer">
+        <div class="container">
+            <p>2025 Cycling Wear. This page was made for educational purposes.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

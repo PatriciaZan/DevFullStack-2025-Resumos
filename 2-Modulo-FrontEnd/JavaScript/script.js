@@ -23,6 +23,12 @@ window.addEventListener('DOMContentLoaded', () => {
         itens = JSON.parse(dados)
         renderizarLista()
     }
+
+    const dadosCompra = localStorage.getItem('comprados')
+    if(dadosCompra){
+        comprados = JSON.parse(dadosCompra)
+        renderizarLista()
+    }
 })
 
 // Salva novos itens, itens já comprados -------------------------------------------------------
@@ -153,7 +159,7 @@ function filtrarComprados(){
 }
 
 function filtrarPendentes(){
-    listaItens.innerHTML = ''
+    listaFiltrada.innerHTML = ''
     itens.forEach((item, index) => {
         console.log(item);
         const li = document.createElement('li')
@@ -163,6 +169,7 @@ function filtrarPendentes(){
         listaFiltrada.appendChild(li)
     }) 
 }
+
 
 // Funcionalidades:
 
