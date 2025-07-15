@@ -1,0 +1,32 @@
+
+.resultado{
+width: 90%;
+height: 50px;
+
+margin: 20px auto;
+background-color: #adadad;
+
+display: flex;
+justify-content: flex-end;
+align-items: center;
+font-size: 36px; 
+}
+
+.container{
+    position:relative;
+    width: 250px;
+    height: 400px;  
+    background-color: grey;
+    margin: 0 auto;
+    padding: 20px;
+  
+    margin: 200px auto ;
+    width: 20%;
+}
+
+.botoes{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 15px;
+    vertical-align: middle
+}

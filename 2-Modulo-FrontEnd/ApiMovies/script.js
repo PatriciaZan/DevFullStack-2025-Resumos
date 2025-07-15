@@ -1,7 +1,7 @@
 
 const moviesContainer = document.getElementById('container')
 
-//
+const apiKey = '2a51b144b0d9fcbeadf79af09bd3e1f2'
 const apiURL = `https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}&language=en-US&sort_by=popularity.desc`
 
 async function pegarFilmes(){
