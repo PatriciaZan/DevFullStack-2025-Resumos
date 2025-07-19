@@ -69,7 +69,8 @@ lista.inserirInicio(9)
 
 lista.imprimir()
 
-//
+// ---------------------------
+//Nó unico da lista
 
 class Node {
     constructor(valor){ 
