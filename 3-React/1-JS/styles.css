@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  min-height: 100vh;
+
+  background-color: rgb(4, 23, 53);
+}
+
+h1 {
+  font-size: 40px;
+  color: rgb(44, 153, 226);
+}
+
+p {
+  font-size: 20px;
+  color: white;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  gap: 100px;
+}
+
+button {
+  font-size: 15px;
+  padding: 20px;
+}
+
+.active {
+  background-color: rgb(44, 153, 226);
+}
