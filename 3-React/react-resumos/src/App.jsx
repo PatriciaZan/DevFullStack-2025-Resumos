@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Produto } from "./components/Greeting";
 
 const content = [
   {
@@ -32,8 +33,19 @@ const content = [
 function App() {
   const [indexAbaAtiva, atualizaIndexAbaAtiva] = useState(0);
 
+  const dados = {
+    name: "Nome",
+    preco: 10,
+    descricao: "Alguma descriçãoooo",
+  };
+
   return (
     <>
+      <Produto
+        name={dados.name}
+        preco={dados.preco}
+        descricao={dados.descricao}
+      />
       <div>
         <header>
           <h1>ReactJs</h1>
