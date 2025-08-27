@@ -1,0 +1,28 @@
+.navBar-container {
+  box-shadow: 1px 4px 17px 6px rgba(110, 110, 110, 0.55);
+}
+
+.navBar-Nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.navBar-toggle {
+  background-color: rgb(211, 211, 211);
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.navBar-toggle a {
+  margin-left: 10px;
+}
+
+.navBar-link_catalogo {
+  color: blue;
+}
+
+.navBar-link_kanban {
+  color: blue;
+}
