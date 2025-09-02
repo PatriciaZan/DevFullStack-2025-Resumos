@@ -1,0 +1,2 @@
+//Exercício 9 — Implemente um gerenciador de fila de atendimento com prioridades “normal” e “preferencial”. Simule chegadas e atendimentos por comandos digitados; a cada atendimento, atenda duas senhas preferenciais para cada normal, controlando isso com contadores e if para alternância. Permita encerrar o programa e imprimir o histórico de chamadas, garantindo que casos de fila vazia sejam tratados.
+
